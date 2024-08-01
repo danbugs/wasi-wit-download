@@ -1,0 +1,20 @@
+[package]
+name = "wasi-wit-download"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dan Chiarlone"]
+description = "A CLI tool to download and extract specific WIT dependencies from Wasmtime releases"
+readme = "README.md"
+repository = "https://github.com/danbugs/wasi-wit-download"
+license = "AGPL-3.0"
+
+[dependencies]
+clap = "4.5.13"
+reqwest = "0.12.5"
+zip = "2.1.6"
+tokio = { version = "1.39.2", features = ["full"] }
+anyhow = "1.0.44"
+
+[dev-dependencies]
+assert_cmd = "2.0"
+tempfile = "3.2"
