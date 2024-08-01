@@ -49,3 +49,4 @@ error: process didn't exit successfully: `wasi-wit-download.exe 18 cli clocks fo
 
 - This only works for Wasmtime versions 10 and above because we hardcode WIT deps search from `wasmtime-{version}.0.0/crates/wasi/wit/deps` which only exists in versions 10 onwards.
 - There's no CI for testing. Only manual testing.
+- We only allow downloading WIT files from major Wasmtime releases (e.g., 10, 11, 12, etc.). We don't support downloading WIT files from minor releases (e.g., 10.1, 10.2, 10.3, etc.).
